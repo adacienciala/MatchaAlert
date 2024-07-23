@@ -1,5 +1,5 @@
 # Use the official Node.js image.
-FROM node:14
+FROM node:20
 
 # Create and set the working directory.
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 2910
 
 # Command to run the application.
-CMD [ "node", "index.ts" ]
+CMD [ "npm", "start" ]
